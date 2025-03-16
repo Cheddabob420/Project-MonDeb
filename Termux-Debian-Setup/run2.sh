@@ -1,7 +1,8 @@
 #!/bin/bash 
 echo "Adding Main User"
 sleep 5
-read -ie user "Enter primary username: " name
+read -e -i "user" -p "Enter primary username: " name
+export name
 echo "Hello $name"
 sleep 2
 echo "Lets get your account in debian setup."
