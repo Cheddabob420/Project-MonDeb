@@ -1,5 +1,6 @@
 #!/bin/bash
 termux-setup-storage
+pkg i neovim wget
 wait
 mkdir MonDeb
 chmod +wrx MonDeb
@@ -14,7 +15,7 @@ export APAK
 PMDZ="Project-MonDeb_V1.0.0Beta0.1.0.zip"
 export PMDZ
 PMD="Project-MonDeb_V1.0.0Beta0.1.0"
-
+export PMD
 function ZipCheck () {
 if [ -f "$PMDZ" ]; then
   echo "The file '$PMDZ' exists in '$TDL'. Unzipping..."
