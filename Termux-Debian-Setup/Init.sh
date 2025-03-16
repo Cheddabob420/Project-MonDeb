@@ -1,6 +1,10 @@
 #!/bin/bash
 termux-setup-storage
 wait
+mkdir MonDeb
+chmod +wrx MonDeb
+MDH="~/MonDeb"
+export MDH
 TDL="~/storage/downloads"
 export TDL
 PMDS="~/storage/downloads/Project-MonDeb_V1.0.0Beta0.1.0/Termux-Debian-Setup"
@@ -52,9 +56,9 @@ cd $TDL
 
 ProjectCheck
 
-cp -t ~/ run1.sh run2.sh run3.sh run4.sh setupwidget.sh
+cp -t $MDH run1.sh run2.sh run3.sh run4.sh setupwidget.sh
 
-cd ~/
+cd $MDH
 
 chmod +x run1.sh run2.sh run3.sh run4.sh setupwidget.sh
 
