@@ -47,6 +47,7 @@ sleep 2
 cowsay "Now that the fundamentals are out the way we can get termux configured and proot installed."
 sleep 3
 cowsay "We need to let termux display over other apps so remove the # beside the corresponding line."
+sleep 10
 cowsay "it will become displayed in color if done correctly. You will need to press (i) before removing the hash(#). Then press (esc) followed by (:wq) and (enter) afterwards to complete this task."
 sleep 15
 cd ~/.termux
