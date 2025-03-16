@@ -1,6 +1,6 @@
 #!bin/bash
 TMPD=$(pwd)
-export TPMD
+export TMPD
 echo "Project-Monet-Debian"
 sleep 3
 echo "Welcome"
@@ -59,7 +59,7 @@ wait
 apt update && apt dist-upgrade -y
 cowsay "Proot installed as well as debian core fs. we will now login to debian and setup the user so nothing more is done inside root"
 sleep 2
-proot-distro login debian --user root --termux-home -- cd Project-MonDeb && sh run2.sh
+proot-distro login debian --user root --termux-home -- cd $TMPD && sh run2.sh
 wait
 cowsay "Primary user created! Now setting up Xfce4 and basic packages in proot."
 sleep 15
