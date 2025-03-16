@@ -1,4 +1,6 @@
 #!bin/bash
+pwd >> read TPMD
+export $TPMD
 echo "Project-Monet-Debian"
 sleep 3
 echo "Welcome"
@@ -59,12 +61,12 @@ cowsay "Proot installed as well as debian core fs. we will now login to debian a
 sleep 2
 proot-distro login debian --user root --termux-home -- cd Project-MonDeb && sh run2.sh
 wait
-cowsay "Primary user installed! The username and pass is (user, 1234). Now setting up Xfce4 and basic packages in proot."
+cowsay "Primary user created! Now setting up Xfce4 and basic packages in proot."
 sleep 15
-cd Project-MonDeb
+cd $TPMD
 sh run3.sh
 wait
 cowsay "Debian configured with Xfce4 and basics. Now setting up widget script to make a one click launch widget."
 sleep 7
-cd Project-MonDeb
+cd $TMPD
 sh setupwidget.sh
