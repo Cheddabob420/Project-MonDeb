@@ -56,10 +56,10 @@ cd $TDL
 
 ProjectCheck
 
-cp -t $MDH run1.sh run2.sh run3.sh run4.sh setupwidget.sh
+cp -t $MDH run1.sh run2.sh run3.sh run4.sh setupwidget.sh Debian.sh
 
 cd $MDH
 
-chmod +x run1.sh run2.sh run3.sh run4.sh setupwidget.sh
+chmod +x run1.sh run2.sh run3.sh run4.sh setupwidget.sh Debian.sh
 
 sh run1.sh
