@@ -1,6 +1,6 @@
 #!bin/bash
-pwd >> read TPMD
-export $TPMD
+TMPD=$(pwd)
+export TPMD
 echo "Project-Monet-Debian"
 sleep 3
 echo "Welcome"
