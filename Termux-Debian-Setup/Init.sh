@@ -1,10 +1,11 @@
 #!/bin/bash
 termux-setup-storage
-pkg i neovim wget
+pkg i neovim wget -y
 wait
-mkdir MonDeb
-chmod +wrx MonDeb
-MDH="~/MonDeb"
+mkdir Project-MonDeb
+chmod +wrx Project-MonDeb
+#EOT
+MDH="~/Project-MonDeb"
 export MDH
 TDL="~/storage/downloads"
 export TDL
@@ -19,11 +20,13 @@ export PMD
 function ZipCheck () {
 if [ -f "$PMDZ" ]; then
   echo "The file '$PMDZ' exists in '$TDL'. Unzipping..."
+  sleep 3
   unzip $PDMZ
   wait
   cd $PMDS
 else
   echo "The file '$PMDZ' does not exist in '$TDL'. Downloading..."
+  sleep 3
   wget https://github.com/Cheddabob420/Project-MonDeb/archive/refs/tags/Project-MonDeb_V1.0.0Beta0.1.0.zip
   wait
   unzip $PDMZ
@@ -46,21 +49,12 @@ fi
 
 export -f ProjectCheck
 export -f ZipCheck
-
+#EOT
 apt update && apt dist-upgrade -y 
-
 wait
-
-pkg i wget -y
-
 cd $TDL
-
 ProjectCheck
-
 cp -t $MDH run1.sh run2.sh run3.sh run4.sh setupwidget.sh Debian.sh
-
 cd $MDH
-
 chmod +x run1.sh run2.sh run3.sh run4.sh setupwidget.sh Debian.sh
-
 sh run1.sh
