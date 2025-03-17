@@ -21,7 +21,7 @@ Including:
 - Need to learn what we need to make a script that downloads this GH repo and sets the folder that it downlods to to variable to call later.
 
 
-Disclaimergit push
+Disclaimer!!
 
   Made this mostly for testing and learing so nothing is ment to be fully functional by no means or even work at all, use with extreme caution as
   inproper use of these resouces can result in but not limited to : bricked devices, lost data, employment or leagal issues, the neighbor stealing your wifi and buying things with your credit card on
