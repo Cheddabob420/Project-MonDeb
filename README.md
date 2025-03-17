@@ -13,13 +13,13 @@ Including:
 
   TODO:
   
-- Comment scripts as they are sloppy.
-- There are several functions to setup variables to make calling much easier that could be introduced after a bit of learning.
-- There is many instances that need to be optional but i need to learn how to use read better to make that possible.
-- Make script able to install more than one distro (multipile choices)
-- Have a WIP fire tv remote over adb script to make a sort of remote on your desktop, have codes setup just working on loop to keep it listening.
-- Need to learn what we need to make a script that downloads this GH repo and sets the folder that it downlods to to variable to call later.
-
+- Comment scripts as they are sloppy./WIP
+- There are several functions to setup variables to make calling much easier that could be introduced after a bit of learning./WIP
+- There is many instances that need to be optional but i need to learn how to use read better to make that possible./WIP
+- Make script able to install more than one distro (multipile choices)./Not Started
+- I have a WIP fire tv remote over adb script to make a sort of remote on your desktop, i have the codes setup just working on loop to keep it listening./WIP
+- I need to learn what is needed to make a script that downloads this GH repo and sets the folder that it downlods to to variable to call later./Done
+- OverHaul the repo and get rid of extra files like the zip that i thought i needed to make a release, or the package jsons.\Not Started
 
 Disclaimer!!
 
