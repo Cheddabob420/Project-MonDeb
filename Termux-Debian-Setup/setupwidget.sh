@@ -1,10 +1,12 @@
 #!/bin/bash
 Final="Setup complete and debian should launch throgh the termux widget. Thank you for using Cheddars Tech Solutions and remember: Cheddar is the better solution!"
-
+PMD="~/Project-MonDeb"
+cd
 mkdir .shortcuts
-
+chmod +wrx .shortcuts
+cd $PMD
 cp Debian.sh ~/.shortcuts
-
+cd && cd ./shortcuts
 chmod +x ~/.shortcuts/Debian.sh
 
 sleep 2
