@@ -40,6 +40,8 @@ pkg i libfontconfig -y
 pkg i libgtk-3-bin -y
 pkg i flatpak wget -y
 apt update && apt dist-upgrade -y
+cowsay "the cow says"
+sleep 2
 neofetch
 sleep 10
 cowsay "Packages installed and system updated"
