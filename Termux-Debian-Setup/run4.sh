@@ -11,6 +11,7 @@ sudo apt install cmake -y
 sudo apt install cowsay -y
 sudo apt install wget -y
 sudo apt install nodejs -y
+sudo apt install hollywood -y
 sudo apt install curl -y
 sudo apt install xfce4 -y
 sudo apt install xfce4-goodies -y
